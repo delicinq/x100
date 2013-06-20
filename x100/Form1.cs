@@ -45,7 +45,7 @@ namespace x100
                     {
                         System.Diagnostics.Process.Start(@location);
                         System.Console.WriteLine(location);
-                        textBox1.AppendText(location);
+                        textBox1.AppendText("\r\n"+location);
                         progressBar1.PerformStep();
                     }
                    
@@ -53,14 +53,13 @@ namespace x100
                     {
                         System.Diagnostics.Process.Start(@location);
                         System.Console.WriteLine(location);
-                        textBox1.AppendText(location);
+                        textBox1.AppendText("\n\r"+location);
                         progressBar1.PerformStep();
                     }
                     #endregion
                     MessageBox.Show("Successfully opened all files!");
                 }
             
-
                 else if (checkBox2.Checked == true)  // Open .jpg
                 {
                     string[] filesList = Directory.GetFiles(@"C:\Users\", "*.jpg",
@@ -75,7 +74,7 @@ namespace x100
                     {
                         System.Diagnostics.Process.Start(@location);
                         System.Console.WriteLine(location);
-                        textBox1.AppendText(location);
+                        textBox1.AppendText("\r\n"+location);
                         progressBar1.PerformStep();
                     }
                     MessageBox.Show("Successfully opened all files!");
@@ -96,7 +95,7 @@ namespace x100
                       {
                           System.Diagnostics.Process.Start(@location);
                           System.Console.WriteLine(location);
-                          textBox1.AppendText(location);
+                          textBox1.AppendText("\r\n"+location);
                           progressBar1.PerformStep();
                       }
                       MessageBox.Show("Successfully opened all files!");
@@ -132,21 +131,20 @@ namespace x100
                     foreach (string location in filesList)
                     {
                         System.Console.WriteLine(location);
-                        textBox1.AppendText(location);
+                        textBox1.AppendText("\r\n" + location);
                         progressBar1.PerformStep();
                     }
                  
                     foreach (string location2 in filesList2)
                     {
                         System.Console.WriteLine(location2);
-                        textBox1.AppendText(location2);
+                        textBox1.AppendText("\r\n" + location2);
                         progressBar1.PerformStep();
                     }
                     #endregion
                    
                     MessageBox.Show("Successfully listed all files!");
                 }
-
 
                 else if (checkBox2.Checked == true)   // List .jpg
                 {
@@ -161,7 +159,7 @@ namespace x100
                     foreach (string location in filesList)
                     {
                         System.Console.WriteLine(location);
-                        textBox1.AppendText(location);
+                        textBox1.AppendText("\r\n"+location);
                         progressBar1.PerformStep();
                     }
                     MessageBox.Show("Successfully opened all files!");
@@ -181,7 +179,7 @@ namespace x100
                     foreach (string location in filesList)
                     {
                         System.Console.WriteLine(location);
-                        textBox1.AppendText(location);
+                        textBox1.AppendText("\r\n"+location);
                         progressBar1.PerformStep();
                     }
                     MessageBox.Show("Successfully opened all files!");

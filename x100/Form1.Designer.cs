@@ -35,15 +35,17 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(6, 77);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(559, 375);
             this.textBox1.TabIndex = 0;
             // 
@@ -114,13 +116,6 @@
             this.checkBox3.Text = ".png";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(540, 90);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(22, 352);
-            this.vScrollBar1.TabIndex = 7;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -145,7 +140,6 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.listBtn);
             this.Controls.Add(this.openBtn);
-            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "x100";
@@ -164,7 +158,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Label label1;
     }
 }
