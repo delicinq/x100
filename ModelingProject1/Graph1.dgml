@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1)" Category="CodeSchema_Solution" Bounds="-25,-12.98,50,25.96" Label="x100" />
+  </Nodes>
+  <Links />
+  <Categories>
+    <Category Id="CodeSchema_Solution" Label="Solution" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" NavigationActionLabel="Solutions" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(VsSolutionUri)/x100.sln" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="VsSolutionUri" Value="file:///C:/Users/Christopher/Documents/Visual Studio 2012/Projects/x100" />
+  </Paths>
+</DirectedGraph>
